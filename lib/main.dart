@@ -65,9 +65,7 @@ class _QuizPageState extends State<QuizPage> {
                   ),
                 ),
                 onPressed: () {
-                  setState(() {
-                    Andrew(true);
-                  });
+                  Andrew(true);
                 }),
           ),
         ),
@@ -84,9 +82,7 @@ class _QuizPageState extends State<QuizPage> {
                   ),
                 ),
                 onPressed: () {
-                  setState(() {
-                    Andrew(false);
-                  });
+                  Andrew(false);
                 }),
           ),
         ),
@@ -109,5 +105,6 @@ class _QuizPageState extends State<QuizPage> {
 
       quizBrain.nextQuestionBitch();
     }
+    setState(() {});
   }
 }
